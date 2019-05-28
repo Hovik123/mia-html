@@ -2,125 +2,41 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
-    <title>Homepage</title>
+    <title>Learn Html tags</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+        h1 {
+            color: aquamarine;
+        }
+    </style>
 </head>
 
 <body>
-<div class="container">
-    <div class="nav-wrapper">
-        <div class="left-side">
-            <div class="nav-link-wrapper active-nav-link">
-                <a href="index.html">Home</a>
-            </div>
 
-            <div class="nav-link-wrapper">
-                <a href="about.html">About</a>
-            </div>
-        </div>
-        <div class="right-side">
-            <div class="brand">
-                MIT
-            </div>
-        </div>
-    </div>
-
-    <div class="content-wrapper">
-        <div class="portfolio-items-wrapper">
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/logos/quip.png" alt="">
-                    </div>
-
-                    <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine
-                        in 2016.
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/logos/devcamp.png" alt="">
-                    </div>
-
-                    <div class="subtitle">Coding bootcamp and learning management system.</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/logos/eventbrite.png" alt="">
-                    </div>
-
-                    <div class="subtitle">Eventbrite is the leading event management platform on the web with millions
-                        of individuals utilizing their applications
-                        to find, register or, and management events in numerous industries.
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/logos/shop-hacker.png" alt="">
-                    </div>
-
-                    <div class="subtitle">Shop Hacker allows you to easily import digital products such as elearning
-                        courses, software, and games directly
-                        into your ecommerce store.
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/logos/crondose.png" alt="">
-                    </div>
-
-                    <div class="subtitle">Online tutorials and productivity tips.</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/logos/dailysmarty.png" alt="">
-                    </div>
-
-                    <div class="subtitle">Keep track of what you learn every day.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</body>
-
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('image-blur');
-        });
-        portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('image-blur');
-        });
-    });
-
+<h1>H1 header text</h1>
+<h2 style="color: red">H2 header text with inline style</h2>
+<h3>H3 header text</h3>
+<h4>H4 header text</h4>
+<h5>H5 header text</h5>
+<h6>H6 header text</h6>
+<span>span element</span>
+<p>p element content very long text which can be displayed here.</p>
+<div>Div element</div>
+<a href="https://google.com" target="_blank">go to google.com with target blank</a>
+<section>
+    Section tag
+</section>
+<main>Main tag</main>
+<header>
+    Header tag
+</header>
+<footer>
+    Footer tag
+</footer>
+<script type="text/javascript">
+    console.log("Hello from javascript")
 </script>
+</body>
 
 </html>
