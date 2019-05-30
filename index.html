@@ -8,7 +8,8 @@
 </head>
 
 <body>
-<main class="container">
+<h1>Firts lesson</h1>
+<main id="unique-id" class="container">
     <header class="nav-wrapper">
         <nav class="left-side">
             <div class="nav-link-wrapper active-nav-link">
@@ -114,6 +115,7 @@
 
     portfolioItems.forEach(portfolioItem => {
         portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes);
             portfolioItem.childNodes[1].classList.add('image-blur');
         });
         portfolioItem.addEventListener('mouseout', () => {
