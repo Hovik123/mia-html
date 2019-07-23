@@ -1,3 +1,13 @@
 h1 {
   color: aquamarine;
 }
+.menu{
+border: 1px solid red;
+}
+.menu .menu__item {
+  color: green;
+  font-size: 20px;
+}
+.menu .menu__item-href{
+  color: red;
+}
